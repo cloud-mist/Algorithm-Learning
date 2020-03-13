@@ -16,7 +16,7 @@ int main(){
 	int a[10] = {14,15,16,17,18,19,20};
 	reverse(a,a+4); //将a[0]~a[3]进行反转
 	for (int i = 0; i < 7; ++i)
-	{
+    {
 		printf("%d ", a[i]);
 	}
 	printf("\n");
@@ -29,8 +29,22 @@ int main(){
 	}
 	printf("\n");
 
-	//5.sort()
+	//5.sort() 排序函数, 对char型数组排序默认字典序
+	/* sort(首元素地址，尾元素地址的下一个地址，比较函数（非必填）)
+	   第三项不填，默认递增排序 */
+	sort(a,a+7);
+	for (int i = 0; i < 7; ++i)
+	{
+		printf("%d ", a[i]);
+	}
+	printf("\n");
+
+	char c[] = {'d','e','f','F'};
+	sort(c,c+4);
+	for (int i = 0; i < 4; ++i)
+	{
+		printf("%c", c[i]);
+	}
+
 	return 0;
-
-
 }
