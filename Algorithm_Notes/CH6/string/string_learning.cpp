@@ -6,22 +6,20 @@ int main(){
 	//1.访问
 	string str = "abcd";
 	for (int i = 0; i < str.length(); ++i)
-	{
-		printf("%c",str[i]);
-	}
+		printf("%c",str[i]);					// abcd
 	printf("\n");
+
 	//2.读入输出 cin & cout
 	string str2;
 	cin >> str2;
 	cout << str2 << endl;
-	//3.用printf 输出
+
+	//★3.用printf 输出
 	printf("%s\n", str.c_str() );	//将string型str 用 c_str() 变成字符数组
 
 	//4.通过迭代器访问，insert & erase 要求以迭代器为参数
 	for(string::iterator it = str.begin(); it != str.end(); it++)
-	{
 		printf("%c", *it);
-	}
 	printf("\n");
 
 	//5.string加法 拼接str
@@ -48,24 +46,24 @@ int main(){
 	//9.erase()  O(n)
 		//9.1	str.erase(it) 删除单个元素
 	str4.erase(str4.begin()+1);
-	cout << "str4: " << str4 << endl;
+	cout << "str4: " << str4 << endl;				//str4: ox
 		//9.2.1 str.erase(first, last)  [first,last)
 		//9.2.2 str.erase(pos, length)  
 	string str6 = "zxcvbnm";
 	string str7 =str6;
 	str6.erase(str6.begin()+1,str6.end()-1);
-	cout <<"str6: " << str6 << endl;
+	cout <<"str6: " << str6 << endl;				//str6: zm
 	str7.erase(1,5);
-	cout << "str7: " << str7 << endl;
+	cout << "str7: " << str7 << endl;				//str7: zm
 
 	//10.clear() 清空string数据  复杂度O(1)
 	str7.clear();
-	printf("%d\n",str7.length() ); //0
+	printf("%d\n",str7.length() ); 					//0
 
 	//11.substr()	substr(pos,len) 返回从pos号开始，长度为len的字串a。 复杂度O(len)
 	str7 = "thank you very much";
-	cout << str7.substr(0,5) << endl; //thank
-	cout << str7.substr(6,8) << endl; //you very
+	cout << str7.substr(0,5) << endl; 				//thank
+	cout << str7.substr(6,8) << endl; 				//you very
 
 	/*12.find() str.find(str2)  当str2是str的字串是，返回str中第一次出现的位置。
 								如果不是，返回string::npos
@@ -74,9 +72,7 @@ int main(){
 	*/
 	string str8 = "you";
 	if (str7.find(str8) != string::npos)
-	{
-		cout << str7.find(str8) << endl;	//6
-	}
+		cout << str7.find(str8) << endl;			//6
 
 	//13.replace() 
 
