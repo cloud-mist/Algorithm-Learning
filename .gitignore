@@ -5,6 +5,6 @@
 !*.cpp
 !*.txt
 !*.md
-
+!*.py
 # Unignore all dirs
 !*/
