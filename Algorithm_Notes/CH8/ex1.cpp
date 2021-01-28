@@ -6,7 +6,6 @@
  * 
  * */
 
-
 #include <cstdio>
 const int maxn = 30;
 int n, V, maxValue = 0;		// 物品件数n, 背包容量V， 最大价值maxValue
@@ -41,3 +40,5 @@ int main(){
 	printf("%d\n", maxValue);
 	return 0;
 }
+
+

@@ -88,12 +88,3 @@ int main()
 	showresult(fenshu[2]);
 }
 
-
-
-
-
-
-
-
-
-

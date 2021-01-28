@@ -23,3 +23,7 @@ int main()
 		return 0;
 }
 // 找x 直接遍历 注意while的那个，有很多足测试		
+
+for (int i = 0; i < N; ++i) {
+ntestn	
+}
